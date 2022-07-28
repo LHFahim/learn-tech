@@ -9,6 +9,9 @@ body {
 .override-btn-color {
   background-color: rgba(40, 155, 222, 10%) !important;
 }
+.override-color {
+  background-color: white !important;
+}
 
 .text-titleColor {
   color: #4a4a4a;
