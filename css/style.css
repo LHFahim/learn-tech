@@ -10,6 +10,10 @@ body {
   background-color: rgba(40, 155, 222, 10%) !important;
 }
 
+.text-titleColor {
+  color: #4a4a4a;
+}
+
 /* .cus-bg {
   background-image: linear-gradient(
     to bottom,
