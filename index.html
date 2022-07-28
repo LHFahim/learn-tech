@@ -62,7 +62,7 @@
   </head>
 
   <body>
-    <header class="w-[80%] mx-auto mt-3">
+    <header class="w-[95%] lg:w-[80%] mx-auto mt-3">
       <!-- navigation starts -->
       <nav class="bg-white px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0">
         <div
@@ -161,112 +161,114 @@
       <!-- navigation ends -->
 
       <!-- slide starts -->
-      <section class="special">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide relative rounded w-[90%] mx-auto"
-          data-bs-ride="carousel"
-        >
-          <!-- <div
-            class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+      <section class="mb-7 md:mb-14 lg:mb-32">
+        <div id="controls-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div
+            class="overflow-hidden relative h-56 rounded-lg md:h-96 lg:h-[600px]"
           >
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div> -->
-          <div class="carousel-inner relative w-full overflow-hidden">
-            <!-- item 1 -->
-            <div class="flex carousel-item active relative float-left w-full">
+            <!-- Item 1 -->
+            <div
+              class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+              data-carousel-item=""
+            >
               <img
                 src="images/cover/e-1.png"
-                class="block w-[100%] shadow-lg cus-bg"
+                class="block absolute top-1/2 left-1/2 w-auto h-auto -translate-x-1/2 -translate-y-1/2"
                 alt="..."
               />
+              <!-- carousel text -->
               <div
-                class="carousel-caption hidden md:block relative bottom-96 -left-0 text-center"
+                class="flex flex-col justify-center items-center absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2"
               >
-                <h5 class="text-5xl">Get Started Digital Learning</h5>
-                <p class="mt-5">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                <h1 class="text-xl font-semibold md:text-5xl lg:text-6xl">
+                  Build Your Career
+                </h1>
+                <p
+                  class="mt-1 lg:mt-2 text-center text-sm md:text-lg lg:text-lg"
+                >
+                  Our skilled instructors are continuously training students of
+                  all calibre.
                 </p>
-                <button class="bg-blue-600 px-6 py-2 mt-5">Get Started</button>
+                <button class="bg-blue-600 px-6 py-2 mt-2">Get Started</button>
               </div>
             </div>
-            <!-- item 2 -->
-            <div class="carousel-item relative float-left w-full">
+            <!-- Item 1 -->
+            <div
+              class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+              data-carousel-item=""
+            >
               <img
-                src="images/cover/e-2.png"
-                class="block object-fill h-full w-full cus-bg"
+                src="images/cover/e-1.png"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
               />
+              <!-- carousel text -->
               <div
-                class="carousel-caption hidden md:block relative bottom-96 -left-0 text-center"
+                class="flex flex-col justify-center items-center absolute top-1/2 left-1/2 text-white -translate-x-1/2 -translate-y-1/2"
               >
-                <h5 class="text-5xl">Get Started Digital Learning</h5>
-                <p class="mt-5">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <button class="bg-blue-600 px-6 py-2 mt-5">Get Started</button>
-              </div>
-            </div>
-            <!-- item 3 -->
-            <div class="carousel-item relative float-left w-full">
-              <img src="images/cover/e-3.png" class="block w-full" alt="..." />
-
-              <div
-                class="carousel-caption hidden md:block relative bottom-96 -left-0 text-center"
-              >
-                <h5 class="text-5xl">Get Started Digital Learning</h5>
-                <p class="mt-5">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                <h1 class="text-xl font-semibold">duplicate</h1>
+                <p class="mt-2 text-center text-sm">
+                  Our skilled instructors are continuously updating their
+                  courses as per international standards to keep you up with the
+                  market!
                 </p>
                 <button class="bg-blue-600 px-6 py-2 mt-5">Get Started</button>
               </div>
             </div>
           </div>
+          <!-- Slider controls -->
           <button
-            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
             type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev=""
           >
             <span
-              class="carousel-control-prev-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
+              class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
           </button>
           <button
-            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
             type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next=""
           >
             <span
-              class="carousel-control-next-icon inline-block bg-no-repeat"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
+              class="inline-flex justify-center items-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-white dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
           </button>
         </div>
       </section>
@@ -275,7 +277,7 @@
 
     <main class="w-[90%] lg:w-[80%] mx-auto mb-10">
       <!-- course section starts -->
-      <section class="flex flex-col mt-32 lg:mt-0 mb-32">
+      <section class="flex flex-col lg:mt-0 mb-32">
         <div class="section-header mx-auto text-center mb-12">
           <h1 class="text-2xl lg:text-4xl font-bold text-titleColor">
             Discover Our Popular <br class="hidden lg:block" />
